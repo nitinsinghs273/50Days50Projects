@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.container input[type=search] {
+
+    padding: 20px;
+    width: 0;
+    border: 0;
+    background-color: #fff;
+    outline: none;
+    height: 55px;
+
+}
+
+.container input.acitve {
+    width: 250px;
+}
+
+.container .btn i {
+    font-size: 25px;
+    background-color: white;
+    font-weight: 800;
+
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    align-items: center;
+    padding: 15px;
+    background-color: #fff;
+    border: 0;
+    text-decoration: none;
+    transition: display 0.3s ease;
+
+}
