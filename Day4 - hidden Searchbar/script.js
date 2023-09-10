@@ -1,15 +1,9 @@
-let button = document.getElementsByClassName("btn")[0];
-let search = document.getElementById('Hidden')
+const button = document.querySelector('.btn');
+const search = document.querySelector('#Hidden');
+const container = document.querySelector('.container');
 
-let count = 0;
+
 button.addEventListener('click', () => {
-    if (count % 2 == 0) {
-        search.style.display = 'none';
-        count++;
-    }
-    else {
-        search.style.display = 'block';
-        count++;
-    }
-
+    container.classList.toggle('active');
+    search.focus();
 })
