@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --left-bg-color: rgba(84, 87, 236, 0.6);
+    --right-bg-color: rgba(43, 43, 43, 0.8);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+
+}
+
+.split {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+}
+
+.split.left {
+    left: 0;
+    background: url('playstation.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.split.right {
+    right: 0;
+    background: url('xbox.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.split.left::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--left-bg-color);
+}
+
+.split.right::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--right-bg-color);
+}
+
+h1 {
+    color: white;
+    font-size: 4rem;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+h1 {
+    color: white;
+    font-size: 3.5rem;
+    ;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+button {
+    color: white;
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    background-color: transparent;
+    padding: 20px 60px;
+    white-space: nowrap;
+    border: 2px solid whitesmoke;
+}
+
+.btn1:hover {
+    background-color: rgb(65, 136, 250);
+}
+
+.btn2:hover {
+    background-color: green;
+}
+
+@media screen and (max-width:800px) {
+    h1 {
+        font-size: 2rem;
+        top: 30%;
+    }
+
+    .btn1,
+    .btn2 {
+        padding: 1rem;
+        width: 10rem;
+    }
+}
+
+.container.left-hover .left {
+    width: 75%;
+    transition: width 0.8s ease-in;
+}
+
+.container.left-hover .right {
+    width: 25%;
+    transition: width 0.8s ease-in;
+}
+
+.container.right-hover .left {
+    width: 25%;
+    transition: width 0.8s ease-in;
+}
+
+.container.right-hover .right {
+    width: 75%;
+    transition: width 0.8s ease-in;
+}
+
+
+
+
+
+
+/* .right h1 {
+    font-size: 50px;
+    z-index: 1;
+}
+
+
+.left h1 {
+
+    font-size: 50px;
+}
+
+
+
+
+
+
+
+
+
+ */
