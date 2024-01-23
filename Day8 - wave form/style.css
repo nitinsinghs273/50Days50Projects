@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: steelblue;
+    margin: 70px 0;
+    font-family: sans-serif;
+
+
+}
+
+.container {
+    padding: 25px 40px;
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+    border-radius: 4px;
+    position: relative;
+    font-size: 18px;
+}
+
+.container h1 {
+    margin-top: 15px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 33px;
+    font-weight: 100;
+    letter-spacing: 1.5px;
+    text-transform: capitalize;
+}
+
+.input {
+    width: 300px;
+    position: relative;
+    margin-bottom: 50px;
+
+
+}
+
+.input input {
+    display: block;
+    background: transparent;
+    border: none;
+    width: 100%;
+    padding: 15px 0;
+    border-bottom: 2px solid #fff;
+
+
+}
+
+.input label {
+    position: absolute;
+    top: 11px;
+    left: 0;
+    font-weight: 100;
+}
+
+.input label span {
+    letter-spacing: -5px;
+
+}
+
+.input input:focus {
+    outline: none;
+    border: 0;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+}
+
+
+
+
+.password input {
+    display: block;
+    background: transparent;
+    border: none;
+    width: 100%;
+    padding: 15px 0;
+    border-bottom: 2px solid #fff;
+}
+
+.password {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.password label {
+    position: absolute;
+    top: 11px;
+    left: 0;
+    font-weight: 100;
+
+}
+
+.password input:focus {
+    outline: none;
+    border: 0;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+}
+
+.password label span {
+    letter-spacing: -5px;
+
+
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: 0;
+    background-color: lightblue;
+    margin-bottom: 30px;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+p {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+p a {
+    text-decoration: none;
+    color: lightblue;
+
+}
+
+.input.show label {
+    transform: translateY(-20px);
+}
